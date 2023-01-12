@@ -11,5 +11,5 @@ declare global {
 }
 
 // eslint-disable-next-line no-new-func
-const global: typeof globalThis = new Function('return this')();
+const global: typeof globalThis = (() => this)();
 global.console = console;

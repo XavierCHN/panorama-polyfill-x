@@ -23,7 +23,7 @@ declare global {
 }
 
 // eslint-disable-next-line no-new-func
-const global: typeof globalThis = new Function('return this')();
+const global: typeof globalThis = (() => this)();
 global.setInterval = timers.setInterval;
 global.clearInterval = timers.clearInterval;
 global.setTimeout = timers.setTimeout;
