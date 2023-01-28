@@ -1,5 +1,12 @@
 import { format } from './format';
 
+declare global {
+  interface ErrorConstructor {
+    // this is v8 only
+    captureStackTrace(thisArg: any, func: any): void
+  }
+}
+  
 function write(text: string) {
   for (const line of text.split('\n')) {
     if (line.length > 2047) {

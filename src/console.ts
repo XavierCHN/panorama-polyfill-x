@@ -10,6 +10,4 @@ declare global {
   var console: Console;
 }
 
-// eslint-disable-next-line no-new-func
-const global: typeof globalThis = (() => this)();
-global.console = console;
+globalThis.console = console;
