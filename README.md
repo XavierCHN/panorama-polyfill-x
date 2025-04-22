@@ -1,4 +1,4 @@
-# `panorama-polyfill`
+# `panorama-polyfill-x`
 
 > Polyfills for common JavaScript features for Valve's Panorama UI (for Dota 2 Custom Games).
 
@@ -8,7 +8,7 @@ This package can be used only with a ESM bundler, such as webpack. Check out
 [this tutorial](https://moddota.com/panorama/webpack) for configuration instructions.
 
 ```shell
-npm install panorama-polyfill
+npm install panorama-polyfill-x
 ```
 
 ## Usage
